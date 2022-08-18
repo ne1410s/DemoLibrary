@@ -5,7 +5,7 @@ on:
     - main
     paths:
     - source/**
-  workflow_dispatch:
+  workflow_dispatch: # todo: remove this demo trigger!
 jobs:
   tag:
     runs-on: ubuntu-latest
