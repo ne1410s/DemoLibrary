@@ -19,7 +19,7 @@ jobs:
       run: |
         shopt -s extglob
         for file in ./source/**/!(*Tests|*Test).csproj; do
-          prefix="$(echo "cat /Project/PropertyGroup/VersionPrefix/text()" | xmllint --nocdata --shell $file | sed '1d;$d')"
+          prefix="$(echo "cat /Project/PropertyGroup/VersionPrefix/text()" | xmllint --nocdata --shell "$file" | sed '1d;$d')"
           if [[ $prefix ]]; then
             break
           fi
