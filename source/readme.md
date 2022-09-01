@@ -8,7 +8,7 @@ dotnet tool restore
 dotnet build -c Release -o bin; dotnet coverlet bin/DemoLibrary.Tests.dll -t dotnet -a "test bin/DemoLibrary.Tests.dll -c Release --no-build" --threshold 100 -f cobertura -o TestResults/coverage; dotnet reportgenerator -targetdir:coveragereport -reports:**/coverage.cobertura.xml -reporttypes:"html"; start coveragereport/index.html;
 
 # Run mutation tests and show report
-rm -r ./StrykerOutput; dotnet stryker -o
+if (Test-Path StrykerOutput) { rm -r StrykerOutput }; dotnet stryker -o
 ```
 
 ## Original Project Setup
