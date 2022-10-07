@@ -1,4 +1,8 @@
-﻿namespace DemoLibrary.Tests;
+﻿// <copyright file="Class1Tests.cs" company="ne1410s">
+// Copyright (c) ne1410s. All rights reserved.
+// </copyright>
+
+namespace DemoLibrary.Tests;
 
 /// <summary>
 /// Tests for the <see cref="Class1"/> class.
