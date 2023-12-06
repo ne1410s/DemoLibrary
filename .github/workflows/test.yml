@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 8.0.x
     - name: Add local packages source
       env:
         READ_REPO_PACKAGES: ${{ secrets.READ_REPO_PACKAGES }}

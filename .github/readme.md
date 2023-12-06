@@ -5,6 +5,7 @@
   1. Add a Secret called `COMMIT_KEY` containing the private part of the SSH key
   1. Add a Secret called `READ_REPO_PACKAGES` containing the *packages:read* central PAT Token
   1. Change every reference to DemoLibrary! **NB:** *Especially the "repo url" in the csproj file(s) :')*
+  1. Ensure repo workflows have read and write permissions: `Repo > Settings > Actions > Workflow permissions`
 
 ## Justification
 ### VersionPrefix
