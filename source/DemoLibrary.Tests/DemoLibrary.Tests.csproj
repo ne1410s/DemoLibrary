@@ -9,13 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Using Include="FluentAssertions" />
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="TestResults\**" />
     <EmbeddedResource Remove="TestResults\**" />
     <None Remove="TestResults\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Analyse.4Tests" Version="1.0.0" />
+    <PackageReference Include="Analyse.4Tests" Version="1.0.1" />
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
     <PackageReference Include="Moq" Version="4.20.70" />
