@@ -4,7 +4,7 @@
     <Authors>Paul Jones</Authors>
     <Company>ne1410s</Company>
     <Description>DESCRIPTION HERE</Description>
-    <PackageTags>PACKAGE_TAGS_HERE</PackageTags>
+    <PackageTags>space separated keywords</PackageTags>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <IncludeSymbols>True</IncludeSymbols>
     <Nullable>enable</Nullable>
@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Analyse" Version="1.0.1" />
+    <PackageReference Include="Analyse" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
