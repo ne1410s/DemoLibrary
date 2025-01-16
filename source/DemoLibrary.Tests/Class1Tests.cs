@@ -16,6 +16,6 @@ public class Class1Tests
         var actual = Class1.Add(1, 2);
 
         // Assert
-        actual.Should().Be(3);
+        actual.ShouldBe(3);
     }
 }
